@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    /* Primary */
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.first-container {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--White);
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.normal-content h1 {
+    font-size: 3rem;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 2rem;
+}
+
+.main-wrapper .normal-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 5px var(--Dark-Grayish-Magenta);
+}
+
+.rating:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(8px);
+    width: 100%;
+    cursor: pointer;
+}
+
+.rate-list {
+    display: flex;
+}
+
+.rate-List-item {
+    list-style-type: none;
+}
+
+.rate-List-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.rating h4 {
+    font-size: 1.6rem;
+}
+
+.second-container-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin-top: 2rem;
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 5px 5px 5px var(--Dark-Grayish-Magenta);
+}
+
+.card:hover {
+    transition: transform 0.9s ease;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.profile-summary {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-summer img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 1px solid var(--White);
+    box-shadow: 3px 3px 5px var(--Dark-Grayish-Magenta);
+}
+
+.profile-info {
+    margin-left: 1.5rem;
+}
+
+.profile-info h3 {
+    font-size: 1.4rem;
+    color: var(--White);
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: var(--Soft-Pink);
+}
+
+.card .normal-content p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--White);
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: start;
+}
+
+@media (min-width: 670px) {
+    body {
+        padding: 8rem 0rem;
+    }
+
+    .main-wrapper {
+        flex-direction: row;
+    }
+
+    .main-wrapper .normal-content {
+        width: 50%;
+        margin-right: 10%;
+        text-align: start;
+    }
+
+    .rating-container {
+        width: 50%;
+    }
+
+    .rating {
+        width: 90%;
+        margin-top: 3rem;
+        flex-direction: row;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .rate_S {
+        margin-left: 2rem;
+    }
+
+    .rate_T {
+        margin-left: 4rem;
+    }
+
+    .rating-list {
+        margin-bottom: 0rem;
+    }
+
+    .rating-List-item img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .rating h4 {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .second-container-card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 32%;
+        height: 220px;
+    }
+
+    .card_S {
+        margin-top: 4rem;
+    }
+
+    .card_T {
+        margin-top: 6rem;
+    }
+
+    .profile-img img {
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+
+    .profile-info {
+        margin-left: 0.5rem;
+    }
+
+    .profile-info h4 {
+        margin-bottom: 0.2rem;
+        font-size: 1.1rem;
+    }
+
+    .profile-info p {
+        font-size: 1rem;
+    }
+
+    .card .normal-content p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 990px) {
+    body {
+        padding: 8rem 8rem;
+    }
+
+    .card .normal-content p {
+        font-size: 1rem;
+    }
+}
